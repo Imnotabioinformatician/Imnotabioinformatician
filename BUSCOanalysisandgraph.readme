@@ -4,7 +4,7 @@ This script allows you to perform the BUSCO analysis of your proteomes and autom
 3Inside it create a folder called Proteome_input/ and a folder called Apps/
 4In the folder Apps/ add the scripts "generate_plot.py" and "busco"
 
-5Add your proteomes into the Proteome_input folder.
+5Add your proteomes into the Proteome_input folde make sure they are .fas or .fasta files
 6Run this script. It will ask you which database to use. 
 7Please choose the most appropriate database for you and when prompted write -database. For example -metazoa_odb10, or -bacteria_obd10
 8Your analysis should be ready in the folder called busco_summaries
