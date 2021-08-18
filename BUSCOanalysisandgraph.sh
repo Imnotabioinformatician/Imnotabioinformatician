@@ -37,6 +37,6 @@ echo " "
 
 mkdir -p ./bsco_summaries
 cp ./BUSCOanalysis/*.BUSCO/short_summary.*.txt ./bsco_summaries/
-python3 ./Apps/BUSCO/generate_plot.py -wd bsco_summaries
+python3 ./Apps/generate_plot.py -wd bsco_summaries
 
 echo "results are ready in the folder bsco_summaries/"
