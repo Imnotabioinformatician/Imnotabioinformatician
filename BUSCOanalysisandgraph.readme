@@ -1,14 +1,14 @@
 This script allows you to perform the BUSCO analysis of your proteomes and automatically provide you with a graph of the quality of your proteomes.
-1In order to work you need to have BUSCO installed and in $PATH. 
-2Create a folder called buscoanalysis and the script BUSCOanalysisandgraph.sh
-3Inside it create a folder called Proteome_input/ and a folder called Apps/
-4In the folder Apps/ add the scripts "generate_plot.py" and "busco"
+[1] In order to work you need to have BUSCO installed and in $PATH. 
+[2] Create a folder called buscoanalysis and add the script BUSCOanalysisandgraph.sh in that directory
+[3] Inside i,t create a folder called Proteome_input/ and a folder called Apps/
+[4] In the folder Apps/ add the scripts "generate_plot.py" and "busco"
+[5] Add your proteomes into the Proteome_input folder, and make sure they are .fas or .fasta files
+[6] Run this script. It will ask you which database to use. Please choose the most appropriate database for you and when prompted write the database. 
+    For example: metazoa_odb10, or bacteria_obd10
+[7] Your analysis should be ready in the folder called busco_summaries
 
-5Add your proteomes into the Proteome_input folde make sure they are .fas or .fasta files
-6Run this script. It will ask you which database to use. 
-7Please choose the most appropriate database for you and when prompted write -database. For example -metazoa_odb10, or -bacteria_obd10
-8Your analysis should be ready in the folder called busco_summaries
-
+There are different type of databases to use in BUSCO. The whole list of databases can be found below:
 BUSCO DATABASES TO USE...
  bacteria_odb10
      - acidobacteria_odb10
