@@ -1,0 +1,57 @@
+Info: AutoPhylogeny.sh script
+
+Script to perform the phylogenetic analysis of gene databases
+-It uses MAFFT-EINSI ( E-INS-i (Slow; iterative recommended for sequences with multiple conserved domains and intermediate gaps) *optimised for GPCRs, and some other genes with conserved domains and intermediate gaps* (This can be changed to any other type of MAFFT alingment for any other type of gene, just change the EINSI option in the script for the one you want to use). .  
+
+-trimAL for the trimming of the genes; it performs AUTOMATED and Gappyout versions. 
+
+-IQtree for the phylogenetic reconstruction using Maximum-likelihood.
+As it is, the script will perform the model selection analysis to identify the best model for your genes (will search WAG,LG,Blosum62,Dayhoff,JTT,Poisson and all their possible decorations), then use the best fitting model for the reconstuction. 
+Branch support analysis is ultrafast bootstrap with 1000 replicates, and Sh-aLRT as single branch test with 1000 replicates.
+
+The phylogenetic analysis will be performed in two different trimming files, the gappyout (less trimming) and the automatized version of Trimal, this is to compare the two trimming algoritms from TrimAL. 
+
+-Output files are in the directory final_phylogeny 
+In the file with the extension .iqtree you will find all the information about your run, such as the model used, and the references to cite for your tree.
+In the file with the extension .treefile you will find the nexus version of your tree (to be used in a visualisation program such as Figtree or Ete toolkit)
+______________________________
+
+REQUIREMENTS:
+You need to install MAFFT, trimAL and IQ-tree. All this programs have been converted into containers in CONDA
+and they can be installed as follows:
+
+Installing miniconda
+1 Download the latest miniconda from repo
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+2 Make the miniconda installation script executable
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+
+3 Run miniconda installation script
+./Miniconda3-latest-Linux-x86_64.sh
+
+CONDA installation of the required programs
+
+
+conda config --add channels conda-forge
+
+conda update -n base conda
+conda create -n auto_phylo -c conda-forge -c bioconda iqtree mafft trimal 
+
+activate the environment
+conda activate auto_phylo
+Ready to run the script  
+
+-------------------------------------------------------------------------------------
+Usage
+Add the sequences you want to analyse in a folder and run the script and add the folder name as an argument.
+You can add multiple sequences to perform multiple phylogenies, they need to have the extension ".fasta or .faa"
+
+That's it! The alignment, trimming and phylogeny will be performed automatically 
+
+The alignment files are in the alignment folder
+Trimmed sequences in the trimmed folder
+phylogeny ready in the phylogeny folder
+===
+
+
