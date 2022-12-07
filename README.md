@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Imnotabioinformatician
 - 👀 I’m interested in GPCR evolution
 - 🌱 I’m currently learning R and python
-- 💞️ I’m looking to collaborate on.... not with you, sorry... 
+- 💞️ I’m looking to collaborate on....
 - 📫 How to reach me ... l.yanez-guerra@exeter.ac.uk
 
 <!---
