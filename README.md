@@ -2,7 +2,7 @@
 - 👀 I’m interested in GPCR evolution
 - 🌱 I’m currently learning R and python
 - 💞️ I’m looking to collaborate on....
-- 📫 How to reach me ... l.yanez-guerra@exeter.ac.uk
+- 📫 How to reach me ... l.a.yanez-guerra@soton.ac.uk
 
 <!---
 Imnotabioinformatician/Imnotabioinformatician is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
